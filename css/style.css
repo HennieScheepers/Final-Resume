@@ -1,0 +1,45 @@
+body, html {
+    margin: 0;
+}
+
+body {
+    display: flex;
+}
+
+header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    height: 100vh;
+    top: 0;
+}
+
+.grid-item, h1 {
+    margin-bottom: 5vh;
+}
+
+main {
+    flex: 3;
+}
+
+#small-pp, #medium-pp, #large-pp {
+    width: 20vw;
+    align-self: center;
+    border-radius: 15px;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2;
+    list-style: none;
+    justify-items: flex-start;
+    padding: 0;
+}
+
+.icon {
+    width: 1.5vw;
+}
