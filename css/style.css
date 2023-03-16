@@ -194,11 +194,12 @@ header {
     border-right-style: dashed;
     border-color: #FF5181;
     border-width: 2px;
-
+    width: 25vw;
 }
 
 .grid-item, h1 {
     margin-bottom: 5vh;
+    font-family: 'Lobster', cursive;
 }
 
 main {
@@ -234,9 +235,10 @@ form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 1fr);
-    gap: 1vh;
+    gap: 1.5vh;
     justify-items: left;
     align-items: center;
+    margin-bottom: 3vh;
 }
 
 label {
@@ -253,10 +255,11 @@ input, select, textarea{
     border-style: solid;
     border-width: 1px;
     height: 5vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 textarea {
-    height: 10vh;
+    height: 20vh;
 }
 
 .row-span-3 {
@@ -271,4 +274,42 @@ textarea {
     border-radius: 5px;
     background-color: #FF5181;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
+
+footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 74.4vw;
+    height: 5vh;
+    background-color: white;
+    border-top-style: solid;
+    border-left-style: solid ;
+    border-radius: 1px;
+    border-color: #FF5181;
+    justify-content: space-evenly;
+    font-family: 'Lobster', cursive;
+    align-items: center;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+  }
+
+a:hover {
+    color: #FF5181;
+    text-decoration: none;
+}
+
+a:active {
+    color: hotpink;
+    text-decoration: none;
+  }
