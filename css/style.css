@@ -18,6 +18,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+h3 > #highlight {
+    color: black;
+    text-decoration: underline;
+}
+
 ul {
     list-style-type: none;
     display: grid;
@@ -319,3 +324,100 @@ a:active {
     color: hotpink;
     text-decoration: none;
   }
+
+@media only screen and (max-width: 414px) {
+    body {
+        flex-direction: column;
+    }
+
+    header {
+        position: relative;
+        width: 100vw;
+        border-right-style: none;
+        border-bottom-style: solid;
+        padding: 0;
+        margin-top: 2vh;
+    }
+
+    .icon:hover {
+        transform: none;
+    }
+
+    .icon {
+        width: 4vh;
+        transform: none;
+    }
+
+    footer {
+        width: 100vw;
+        align-self: center;
+        left: 0.5;
+        border-right-style: none;
+        border-left-style: none;
+    }
+
+    footer > a {
+        font-size: 2vh;
+    }
+
+    h1 {
+        font-size: 4.5vh;
+    }
+    
+    h2 {
+        font-size: 3vh;
+        text-align: center;
+    }
+
+    li, label, p, h3, input, select, textarea {
+        font-size: 2vh;
+    }
+
+    h3 {
+        font-size: 2.3vh;
+    }
+
+    ul {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: left;
+        padding: 2vw
+    }
+
+    #small-pp, #medium-pp, #large-pp{
+        width: 40vh;
+    }
+
+    #grid-container {
+        justify-items: center;
+    }
+
+    form {
+        grid-template-rows: repeat(4, 1fr);
+        margin-bottom: 10vh;
+    }
+
+    input, select, textarea{
+        width: 50vw;
+    }
+
+    textarea {
+        height: 5vh;
+    }
+
+    .row-span-3 {
+        grid-row: span 1;
+    }
+
+    #_submit {
+        justify-self: right;
+        width: 30vw;
+    }
+
+    #animation-text-container > h1 {
+        font-size: 8vh;
+    }
+
+    #animation-text-container > p {
+        font-size: 3vh;
+    }
+}
