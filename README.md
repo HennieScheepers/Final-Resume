@@ -7,4 +7,4 @@ Tech: - HTML - CSS
 
 Additional resources: - https://www.magicpattern.design - https://bgjar.com
 
-Here is a link to my wireframe : https://www.figma.com/file/1HX23LekGtOkvdwA9PzreB/ITW_Figma-Resume-Templates-(Copy)?node-id=0-1&t=0s30YfqhR0o6XFSx-0
+Here is a link to my wireframe : https://www.figma.com/file/1HX23LekGtOkvdwA9PzreB/HENSCH063_FTC2301_GroupA_HennieScheepers_Final-Resume-Wireframe?node-id=0-1&t=0s30YfqhR0o6XFSx-0
