@@ -16,6 +16,7 @@ body {
     display: flex;
     position: relative;
     font-family: 'Roboto', sans-serif;
+    flex-wrap: wrap;
 }
 
 ul {
@@ -35,7 +36,17 @@ h1, h2 {
     color: #FF5181;
 }
 
-p, li, label {
+h1 {
+    font-size: 3vw;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+
+
+li, label, p, h3 {
     font-size: 1.5vw;
 }
 
@@ -43,14 +54,23 @@ h1, h2, h3 {
     font-family: 'Lobster', cursive;
 }
 
+@keyframes background-animation {
+    0% {transform: rotate(0deg);} 
+    100% {transform: rotate(360deg);}
+}
+
 #background-container {
     background-image: url("../img/main-background.svg");
-    background-size: 100%;
+    background-size: 200%;
     height: 100vh;
     width: 100vw;
     position: fixed;
-    opacity: 0.4;
-    filter: blur(16px);
+    opacity: 0.1;
+    /* filter: blur(8px); */
+    animation-name: background-animation;
+    animation-duration: 240s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 #animation-container {
@@ -202,6 +222,12 @@ main {
     padding: 0;
 }
 
+.icon:hover {
+    transform: scale(110%);
+    transform: rotate(10deg);
+}
+
 .icon {
     width: 2vw;
+    filter: invert(54%) sepia(24%) saturate(6530%) hue-rotate(312deg) brightness(98%) contrast(107%);;
 }
