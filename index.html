@@ -136,22 +136,23 @@
 
         <!--Contact me-->
         <h2>Contact me!</h2>
-        <form id="contact-me">
-            <label for="_name">Name
-                <input id="_name" name="_name" type="name" placeholder="Please enter you name" required>
-            </label>
+        <form id="contact-me" action="https://formsubmit.co/631fbc02f801d2339ce7037b9a5b8177 " method="POST" target="_blank">
+            <label for="_name">Name: </label>
+            <input class="col-span-2" id="_name" name="Name" type="name" placeholder="Please enter you name here" required>
 
-            <label for="_email">email
-                <input id="_email" name="_email" type="email" placeholder="Please enter your email address" required>
-            </label>
+            <label for="_email">Email: </label>
+            <input class="col-span-2" id="_email" name="Email" type="email" placeholder="Please enter your email address here" required>
 
-            <label for="_subject">Subject
-                <select name="_subject" id="_subject">
-                    <option value="Potential work oppertunity">Potential work oppertunity 👨🏻‍💻</option>
-                    <option value="I have some feedback">I have some feedback 😄</option>
-                    <option value="Let's have a chat!">Let's have a chat! 💬</option>
-                </select>
-            </label>
+            <label for="_subject">Subject: </label>
+            <select class="col-span-2" name="Subject" id="_subject">
+                <option value="Potential work opportunity">Potential work opportunity 👨🏻‍💻</option>
+                <option value="I have some feedback">I have some feedback 😄</option>
+                <option value="Let's have a chat!">Let's have a chat! 💬</option>
+            </select>
+
+            <label for="_message">Message: </label>
+            <textarea class="row-span-3 col-span-2" id="_message" name="Message" placeholder="Please enter your message here"></textarea>
+            <input type="submit" id="_submit">
         </form>
     </main>
 

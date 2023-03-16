@@ -16,7 +16,6 @@ body {
     display: flex;
     position: relative;
     font-family: 'Roboto', sans-serif;
-    flex-wrap: wrap;
 }
 
 ul {
@@ -29,7 +28,7 @@ li {
 
 article, form {
     margin-bottom: 6vh;
-    padding-left: 2vw;
+    padding: 0 4vw 0 4vw;
 }
 
 h1, h2 {
@@ -209,7 +208,6 @@ main {
 
 #small-pp, #medium-pp, #large-pp {
     width: 20vw;
-    align-self: center;
     border-radius: 15px;
 }
 
@@ -230,4 +228,41 @@ main {
 .icon {
     width: 2vw;
     filter: invert(54%) sepia(24%) saturate(6530%) hue-rotate(312deg) brightness(98%) contrast(107%);;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 1vh;
+    justify-items: left;
+}
+
+label {
+    justify-self: left;
+    font-family: 'Lobster', cursive;
+}
+
+input, select, textarea {
+    width: 30vw;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.row-span-3 {
+    grid-row: span 3;
+}
+
+#_submit {
+    grid-row: 7 / 8;
+    grid-column: 2 / 3;
+    width: 5vw;
+    justify-self: center;
+    border-radius: 5px;
+    background-color: #FF5181;
+    color: white;
 }
