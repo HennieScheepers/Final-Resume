@@ -45,7 +45,7 @@ h2 {
 
 
 
-li, label, p, h3 {
+li, label, p, h3, input, select, textarea {
     font-size: 1.5vw;
 }
 
@@ -236,6 +236,7 @@ form {
     grid-template-rows: repeat(8, 1fr);
     gap: 1vh;
     justify-items: left;
+    align-items: center;
 }
 
 label {
@@ -243,7 +244,7 @@ label {
     font-family: 'Lobster', cursive;
 }
 
-input, select, textarea {
+input, select, textarea{
     width: 30vw;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -251,6 +252,11 @@ input, select, textarea {
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
+    height: 5vh;
+}
+
+textarea {
+    height: 10vh;
 }
 
 .row-span-3 {
@@ -260,7 +266,7 @@ input, select, textarea {
 #_submit {
     grid-row: 7 / 8;
     grid-column: 2 / 3;
-    width: 5vw;
+    width: 6vw;
     justify-self: center;
     border-radius: 5px;
     background-color: #FF5181;
