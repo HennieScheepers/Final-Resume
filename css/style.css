@@ -331,12 +331,12 @@ a:active {
 
     header {
         position: relative;
-        width: 100vw;
+        width: 98vw;
         border-right-style: none;
         border-bottom-style: solid;
         margin-top: 0vh;
         flex-direction: row;
-        padding: 0.2vw;
+        padding: 1vw;
     }
 
     header > section {
@@ -412,6 +412,7 @@ a:active {
     input, select, textarea{
         width: 50vw;
         font-size: 3vw;
+        height: 5vh;
     }
 
     textarea {
@@ -524,10 +525,11 @@ a:active {
 
     input, select, textarea{
         width: 50vw;
+        height: 5vh;
     }
 
     textarea {
-        height: 5vw;
+        height: 5vh;
     }
 
     .row-span-3 {
