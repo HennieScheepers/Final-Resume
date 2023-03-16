@@ -133,7 +133,7 @@ h1, h2, h3 {
     background-color: white;
     height: 70vh;
     width: 90vw;
-    border-style: dashed;
+    border-style: solid;
     border-width: 5px;
     border-radius: 15px;
     border-color: #FF5181;
@@ -193,7 +193,7 @@ header {
     top: 0;
     padding: 1vw;
     text-align: center;
-    border-right-style: dashed;
+    border-right-style: solid;
     border-color: #FF5181;
     border-width: 2px;
     width: 25vw;
@@ -285,7 +285,7 @@ footer {
     bottom: 0;
     right: 0;
     width: 74.4vw;
-    height: 5vh;
+    height: 10vh;
     background-color: white;
     border-top-style: solid;
     border-left-style: solid ;
