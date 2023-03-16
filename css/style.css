@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
 
 
 body, html {
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 @keyframes intro-animation {
@@ -17,13 +18,39 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-weight: 300;
+}
+
+article, form {
+    margin-bottom: 6vh;
+    padding-left: 2vw;
+}
+
+h1, h2 {
+    color: #FF5181;
+}
+
+p, li, label {
+    font-size: 1.5vw;
+}
+
+h1, h2, h3 {
+    font-family: 'Lobster', cursive;
+}
+
 #background-container {
     background-image: url("../img/main-background.svg");
     background-size: 100%;
     height: 100vh;
     width: 100vw;
     position: fixed;
-    opacity: 0.7;
+    opacity: 0.4;
+    filter: blur(16px);
 }
 
 #animation-container {
@@ -85,9 +112,10 @@ body {
     background-color: white;
     height: 70vh;
     width: 90vw;
-    border-style: solid;
-    border-width: 1px;
+    border-style: dashed;
+    border-width: 5px;
     border-radius: 15px;
+    border-color: #FF5181;
     background-color: transparent;
     animation-name: fade-in;
     animation-duration: 17s;
@@ -105,6 +133,7 @@ body {
     animation-delay: 1s;
     animation-iteration-count: 1;
     opacity: 0;
+    color: black;
 }
 
 #animation-text-container > p {
@@ -141,6 +170,12 @@ header {
     position: sticky;
     height: 100vh;
     top: 0;
+    padding: 1vw;
+    text-align: center;
+    border-right-style: dashed;
+    border-color: #FF5181;
+    border-width: 2px;
+
 }
 
 .grid-item, h1 {
@@ -149,6 +184,7 @@ header {
 
 main {
     flex: 3;
+    padding: 2vw;
 }
 
 #small-pp, #medium-pp, #large-pp {
@@ -167,5 +203,5 @@ main {
 }
 
 .icon {
-    width: 1.5vw;
+    width: 2vw;
 }
