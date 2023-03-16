@@ -20,6 +20,8 @@ body {
 
 ul {
     list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 li {
@@ -292,6 +294,10 @@ footer {
     justify-content: space-evenly;
     font-family: 'Lobster', cursive;
     align-items: center;
+}
+
+footer > a {
+    font-size: 1.5vw;
 }
 
 a:link {
