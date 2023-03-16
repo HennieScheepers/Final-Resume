@@ -22,8 +22,8 @@
     <!--Header-->
     <header>
         <picture>
-            <source id="small-pp" media="(max-width: 414px)" srcset="./img/pp-small.jpg">
-            <source id="medium-pp" media="(max-width: 1000px)" srcset="./img/pp-medium.jpg">
+            <source id="small-pp" media="(max-width: 480px)" srcset="./img/pp-small.jpg">
+            <source id="medium-pp" media="(max-width: 768px)" srcset="./img/pp-medium.jpg">
             <img id="large-pp" src="./img/pp-large.jpg" alt="Profile Pic">
         </picture>
         <section>
@@ -140,20 +140,20 @@
         <h2>Contact me!</h2>
         <form id="contact-me" action="https://formsubmit.co/631fbc02f801d2339ce7037b9a5b8177 " method="POST" target="_blank">
             <label for="_name">Name: </label>
-            <input class="col-span-2" id="_name" name="Name" type="name" placeholder="Please enter you name here" required>
+            <input id="_name" name="Name" type="name" placeholder="Please enter you name here" required>
 
             <label for="_email">Email: </label>
-            <input class="col-span-2" id="_email" name="Email" type="email" placeholder="Please enter your email address here" required>
+            <input id="_email" name="Email" type="email" placeholder="Please enter your email address here" required>
 
             <label for="_subject">Subject: </label>
-            <select class="col-span-2" name="Subject" id="_subject">
+            <select name="Subject" id="_subject">
                 <option value="Potential work opportunity">Potential work opportunity 👨🏻‍💻</option>
                 <option value="I have some feedback">I have some feedback 😄</option>
                 <option value="Let's have a chat!">Let's have a chat! 💬</option>
             </select>
 
             <label for="_message">Message: </label>
-            <textarea class="row-span-3 col-span-2" id="_message" name="Message" placeholder="Please enter your message here"></textarea>
+            <textarea id="_message" name="Message" placeholder="Please enter your message here"></textarea>
             <input type="submit" id="_submit">
         </form>
     </main>

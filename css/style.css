@@ -4,6 +4,7 @@
 
 body, html {
     margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
 }
 
@@ -241,11 +242,12 @@ main {
 form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 1.5vh;
     justify-items: left;
-    align-items: center;
-    margin-bottom: 3vh;
+    align-items: start;
+    margin-bottom: 9vh;
+    height: 50vh;
 }
 
 label {
@@ -269,14 +271,10 @@ textarea {
     height: 20vh;
 }
 
-.row-span-3 {
-    grid-row: span 3;
-}
-
 #_submit {
-    grid-row: 7 / 8;
+    grid-row: 5 / 6;
     grid-column: 2 / 3;
-    width: 6vw;
+    width: 10vw;
     justify-self: center;
     border-radius: 5px;
     background-color: #FF5181;
@@ -289,7 +287,7 @@ footer {
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 74.4vw;
+    width: 74.28vw;
     height: 10vh;
     background-color: white;
     border-top-style: solid;
@@ -325,7 +323,8 @@ a:active {
     text-decoration: none;
   }
 
-@media only screen and (max-width: 414px) {
+  /*tablet design*/
+@media screen and (max-width: 820px){
     body {
         flex-direction: column;
     }
@@ -335,8 +334,14 @@ a:active {
         width: 100vw;
         border-right-style: none;
         border-bottom-style: solid;
-        padding: 0;
-        margin-top: 2vh;
+        margin-top: 0vh;
+        flex-direction: row;
+        padding: 0.2vw;
+    }
+
+    header > section {
+        margin: 1vw;
+        padding: 1vw;
     }
 
     .icon:hover {
@@ -348,43 +353,50 @@ a:active {
         transform: none;
     }
 
+    main {
+        padding: 1vw;
+    }
+
     footer {
         width: 100vw;
         align-self: center;
-        left: 0.5;
+        left: 0;
+        bottom: 0;
         border-right-style: none;
         border-left-style: none;
+        position: fixed;
+        height: 10vh;
     }
 
     footer > a {
-        font-size: 2vh;
+        font-size: 4vw;
     }
 
     h1 {
-        font-size: 4.5vh;
+        font-size: 8vw;
     }
     
     h2 {
-        font-size: 3vh;
-        text-align: center;
+        font-size: 6vw;
+        text-align: left;
     }
 
     li, label, p, h3, input, select, textarea {
-        font-size: 2vh;
+        font-size: 4vw;
     }
 
     h3 {
-        font-size: 2.3vh;
+        font-size: 4.6vw;
     }
 
     ul {
         grid-template-columns: repeat(2, 1fr);
-        justify-items: left;
+        justify-items: center;
         padding: 2vw
     }
 
     #small-pp, #medium-pp, #large-pp{
-        width: 40vh;
+        width: 40vw;
     }
 
     #grid-container {
@@ -394,10 +406,12 @@ a:active {
     form {
         grid-template-rows: repeat(4, 1fr);
         margin-bottom: 10vh;
+        height: 30vh;
     }
 
     input, select, textarea{
         width: 50vw;
+        font-size: 3vw;
     }
 
     textarea {
@@ -410,14 +424,142 @@ a:active {
 
     #_submit {
         justify-self: right;
-        width: 30vw;
+        width: 40vw;
     }
 
     #animation-text-container > h1 {
-        font-size: 8vh;
+        font-size: 12vw;
+    }
+
+    #animation-container {
+        background-size: 140%;
+    }
+    #animation-container-2 {
+        background-size: 60%;
     }
 
     #animation-text-container > p {
-        font-size: 3vh;
+        font-size: 6vw;
+    }
+}
+
+/*mobile design*/
+@media screen and (max-width: 480px) {
+    body {
+        flex-direction: column;
+    }
+
+    header {
+        position: relative;
+        width: 100vw;
+        border-right-style: none;
+        border-bottom-style: solid;
+        padding: 0.2vw;
+        flex-direction: column;
+        margin-top: 2vh;
+    }
+
+    main {
+        padding: 0.2vw;
+    }
+
+    .icon:hover {
+        transform: none;
+    }
+
+    .icon {
+        width: 8vw;
+        transform: none;
+    }
+
+    footer {
+        width: 100vw;
+        align-self: center;
+        left: 0.5;
+        border-right-style: none;
+        border-left-style: none;
+    }
+
+    footer > a {
+        font-size: 4vw;
+    }
+
+    h1 {
+        font-size: 9vw;
+    }
+    
+    h2 {
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    li, label, p, h3, input, select, textarea {
+        font-size: 4vw;
+    }
+
+    h3 {
+        font-size: 4.6vw;
+    }
+
+    ul {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: left;
+        padding: 2vw
+    }
+
+    #small-pp, #medium-pp, #large-pp{
+        width: 40vw;
+    }
+
+    #grid-container {
+        justify-items: center;
+    }
+
+    form {
+        grid-template-rows: repeat(4, 1fr);
+        margin-bottom: 26vh;
+        height: 15vh;
+        padding: 1vw;
+    }
+
+    input, select, textarea{
+        width: 50vw;
+    }
+
+    textarea {
+        height: 5vw;
+    }
+
+    .row-span-3 {
+        grid-row: span 1;
+    }
+
+    #_submit {
+        justify-self: right;
+        width: 30vw;
+    }
+
+    #animation-container {
+        background-size: 140%;
+        width: 100vw;
+        height: 100vh;
+    }
+    #animation-container-2 {
+        background-size: 60%;
+        width: 80vw;
+        height: 80vh;
+    }
+
+    #animation-text-container {
+        width: 80vw;
+        height: 80vh;
+    }
+
+    #animation-text-container > h1 {
+        font-size: 16vw;
+    }
+
+    #animation-text-container > p {
+        font-size: 6vw;
     }
 }
