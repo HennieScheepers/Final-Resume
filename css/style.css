@@ -108,7 +108,7 @@ body, html {
 }
 
 #highlight {
-    color: #FF5181;
+    text-decoration: underline;
 }
 
 
@@ -131,6 +131,7 @@ body {
     position: relative;
     font-family: 'Roboto', sans-serif;
 }
+
 
 a:link {
     color: black;
