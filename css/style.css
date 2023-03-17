@@ -108,7 +108,7 @@ body, html {
 }
 
 #highlight {
-    text-decoration: underline;
+    color: #FF5181;
 }
 
 
@@ -176,6 +176,11 @@ li, label, p, h3, input, select, textarea {
 
 h1, h2, h3 {
     font-family: 'Lobster', cursive;
+}
+
+h3 > #highlight {
+    color: black;
+    text-decoration: underline;
 }
 
 /*Spinning background animation*/
