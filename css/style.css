@@ -457,18 +457,28 @@ textarea {
         flex-direction: column;
     }
 
+    h1 {
+        margin: 1.5vh;
+    }
+
     header {
-        position: relative;
+        position: static;
         width: 100vw;
         border-right-style: none;
         border-bottom-style: solid;
-        padding: 0.2vw;
+        padding: 1.5vw;
         flex-direction: column;
         margin-top: 2vh;
     }
 
+    #grid-container {
+        grid-template-columns: 1fr;
+        gap: 1vh;
+    }
+    
+
     main {
-        padding: 0.2vw;
+        padding: 2vw;
     }
 
     .icon:hover {
