@@ -206,6 +206,7 @@ h3 > #highlight {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     z-index: -1;
+    filter: blur(4px);
 }
 
 /*Styling for header*/
