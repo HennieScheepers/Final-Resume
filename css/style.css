@@ -200,7 +200,7 @@ h3 > #highlight {
     height: 100vh;
     width: 100vw;
     position: fixed;
-    opacity: 0;
+    opacity: 0.2;
     animation-name: background-animation;
     animation-duration: 240s;
     animation-timing-function: linear;
