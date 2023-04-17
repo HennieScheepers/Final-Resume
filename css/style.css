@@ -444,7 +444,7 @@ textarea {
     }
 
     #animation-text-container > h1 {
-        font-size: 12vw;
+        font-size: 10vw;
     }
 
     #animation-container {
@@ -455,7 +455,7 @@ textarea {
     }
 
     #animation-text-container > p {
-        font-size: 6vw;
+        font-size: 5vw;
     }
 }
 
