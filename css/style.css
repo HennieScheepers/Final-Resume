@@ -443,9 +443,10 @@ textarea {
         width: 40vw;
     }
 
-    #animation-text-container > h1 {
+    /* #animation-text-container > h1 {
         font-size: 10vw;
-    }
+        text-align: center;
+    } */
 
     #animation-container {
         background-size: 140%;
@@ -454,9 +455,9 @@ textarea {
         background-size: 60%;
     }
 
-    #animation-text-container > p {
+    /* #animation-text-container > p {
         font-size: 5vw;
-    }
+    } */
 }
 
 /*mobile design*/
