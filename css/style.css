@@ -80,7 +80,7 @@ body, html {
     border-style: solid;
     border-width: 5px;
     border-radius: 15px;
-    border-color:black;
+    border-color: #FF5181;
     background-color: transparent;
     animation-name: fade-in;
     animation-duration: 17s;
