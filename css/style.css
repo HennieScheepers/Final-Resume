@@ -226,6 +226,7 @@ header {
     border-width: 2px;
     width: 25vw;
     z-index: 2;
+    background-color: white;
 }
 
 .icon:hover {
@@ -322,7 +323,7 @@ textarea {
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 74.4vw;
+    width: 75vw;
     height: 10vh;
     background-color: white;
     border-top-style: solid;
