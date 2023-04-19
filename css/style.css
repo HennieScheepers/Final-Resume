@@ -252,6 +252,7 @@ header {
     list-style: none;
     justify-items: flex-start;
     padding: 0;
+    margin: 0;
 }
 
 .grid-item, h1 {
@@ -323,7 +324,7 @@ textarea {
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 75vw;
+    width: 73vw;
     height: 10vh;
     background-color: white;
     border-top-style: solid;
@@ -334,6 +335,7 @@ textarea {
     font-family: 'Lobster', cursive;
     align-items: center;
     z-index: 1;
+    
 }
 
 #navbar > a {
@@ -371,7 +373,7 @@ textarea {
         transform: none;
     }
 
-    main {
+    article {
         padding: 2vw;
     }
 
@@ -384,10 +386,11 @@ textarea {
         border-left-style: none;
         position: fixed;
         height: 10vh;
+        z-index: 2;
     }
 
     #navbar > a {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     h1 {
@@ -480,6 +483,7 @@ textarea {
         padding: 1.5vw;
         flex-direction: column;
         margin-top: 2vh;
+        z-index: 2;
     }
 
     #grid-container {
@@ -510,7 +514,7 @@ textarea {
     }
 
     #navbar > a {
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     h1 {
