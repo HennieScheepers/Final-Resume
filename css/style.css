@@ -225,6 +225,7 @@ header {
     border-color: #FF5181;
     border-width: 2px;
     width: 25vw;
+    z-index: 2;
 }
 
 .icon:hover {
@@ -331,6 +332,7 @@ textarea {
     justify-content: space-evenly;
     font-family: 'Lobster', cursive;
     align-items: center;
+    z-index: 1;
 }
 
 #navbar > a {
